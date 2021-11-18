@@ -29,7 +29,8 @@
       .catch(function(err){
         $("#message").html("Failed to create new object, with error code: " + JSON.stringify(err));
       })
-function fetch() {
+    }
+    function fetch() {
 var TestClass = ncmb.DataStore("FetchTest");
 TestClass.fetch()
 .then(function(results){
